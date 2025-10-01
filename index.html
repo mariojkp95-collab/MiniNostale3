@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Mini Nostale - Early</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>Mini Nostale — Early Build</h1></header>
+<main>
+  <div id="gameWrap">
+    <canvas id="gameCanvas"></canvas>
+    <div id="hud">
+      <div>HP ❤️: <span id="playerHP">100</span></div>
+      <div>Monete 🪙: <span id="playerCoins">0</span></div>
+      <div>Pozioni 🍵: <span id="playerPotions">0</span></div>
+    </div>
+    <div id="controls">
+      <button id="up">↑</button>
+      <div style="display:flex;gap:8px;justify-content:center;">
+        <button id="left">←</button>
+        <button id="down">↓</button>
+        <button id="right">→</button>
+      </div>
+    </div>
+    <div id="msg" class="muted">Raccogli monete e pozioni. Evita i nemici (se li tocchi perdi HP).</div>
+  </div>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
